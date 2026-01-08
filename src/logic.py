@@ -9,7 +9,7 @@ def findprofile(db:Session,email:str):
 def signup(db:Session,details:schemas.Signup):
     # ########password encryption pending
     if findprofile(db, details.email):
-        raise HTTPException(status_code=409, detail="Email already registered")
+        raise HTTPException(status_code=409, detail="Email already registered by another user!")
     user = models.Profile(
         name = details.name,
         dob = details.dob,
