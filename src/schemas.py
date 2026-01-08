@@ -22,3 +22,6 @@ class Profileout(BaseModel):
 class DeleteProfile(BaseModel):
     email:EmailStr
     password: str 
+
+class MessageResponse(BaseModel):
+    detail: str
