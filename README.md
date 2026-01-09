@@ -1,3 +1,4 @@
 using your terminal open src folder and type- 
-\n
+<br>
 uv run uvicorn main:app --reload
+
